@@ -30,9 +30,10 @@ endif ( )
 
 set( CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} "${PROJECT_SOURCE_DIR}/cmake" )
 
+find_package( angelscript REQUIRED )
 find_package( json REQUIRED )
 find_package( restbed REQUIRED )
-find_package( angelscript REQUIRED )
+
 
 
 #
