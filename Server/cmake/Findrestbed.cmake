@@ -1,0 +1,10 @@
+find_path( restbed_INCLUDE angelscript.h HINTS "${PROJECT_SOURCE_DIR}/dependency/AngelScript/angelscript/include" )
+find_library( restbed_LIBRARY_STATIC libangelscript.a HINTS  "${PROJECT_SOURCE_DIR}/dependency/AngelScript/angelscript/projects/cmake" )
+
+if ( restbed_INCLUDE AND restbed_LIBRARY_STATIC )
+    set( ANGELSCRIPT_FOUND TRUE )
+    message( STATUS "Found Restbed include at: ${restbed_INCLUDE}" )
+    message( STATUS "Found Restbed library at: ${restbed_LIBRARY_STATIC}" )
+else ( )
+    message( FATAL_ERROR "Failed to locate Restbed dependency." )
+endif ( )
