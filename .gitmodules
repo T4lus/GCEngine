@@ -4,3 +4,6 @@
 [submodule "Server/dependency/restbed"]
 	path = Server/dependency/restbed
 	url = https://github.com/Corvusoft/restbed.git
+[submodule "Server/dependency/json"]
+	path = Server/dependency/json
+	url = https://github.com/nlohmann/json.git
