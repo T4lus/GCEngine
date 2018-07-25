@@ -1,6 +1,3 @@
-[submodule "Server/dependency/json"]
-	path = Server/dependency/json
-	url = https://github.com/nlohmann/json.git
 [submodule "Server/dependency/Angelscript"]
 	path = Server/dependency/Angelscript
 	url = https://github.com/T4lus/Angelscript.git
